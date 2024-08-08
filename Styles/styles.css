@@ -1,0 +1,52 @@
+/* styles/styles.css */
+
+/* Reset default styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Basic styling for the body */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Container to center content and add padding */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Media queries for computer screens */
+@media (min-width: 1200px) {
+    /* Large desktops */
+    .container {
+        padding: 30px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    /* Medium to large desktops */
+    .container {
+        padding: 20px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    /* Small to medium desktops and large laptops */
+    .container {
+        padding: 15px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    /* Laptops and smaller screens */
+    .container {
+        padding: 10px;
+    }
+}
